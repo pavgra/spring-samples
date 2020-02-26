@@ -1,0 +1,13 @@
+<aspectj>
+
+    <weaver options="-verbose -showWeaveInfo">
+        <!-- only weave classes in our application-specific packages -->
+        <include within="com.example.aspectjltw..*"/>
+    </weaver>
+
+    <aspects>
+        <!-- weave in just this aspect -->
+        <aspect name="com.example.aspectjltw.aspect.SampleAspect"/>
+    </aspects>
+
+</aspectj>
